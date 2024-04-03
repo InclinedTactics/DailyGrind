@@ -14,6 +14,8 @@
 		548C04ED2BBD996600950141 /* DailyGrindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C04EC2BBD996600950141 /* DailyGrindTests.swift */; };
 		548C04F72BBD996600950141 /* DailyGrindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C04F62BBD996600950141 /* DailyGrindUITests.swift */; };
 		548C04F92BBD996600950141 /* DailyGrindUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C04F82BBD996600950141 /* DailyGrindUITestsLaunchTests.swift */; };
+		548C050F2BBDDFBE00950141 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C050E2BBDDFBE00950141 /* SideMenu.swift */; };
+		548C05112BBDE46000950141 /* SideMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C05102BBDE46000950141 /* SideMenuRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		548C04F22BBD996600950141 /* DailyGrindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyGrindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		548C04F62BBD996600950141 /* DailyGrindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGrindUITests.swift; sourceTree = "<group>"; };
 		548C04F82BBD996600950141 /* DailyGrindUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGrindUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		548C050E2BBDDFBE00950141 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		548C05102BBDE46000950141 /* SideMenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,9 @@
 		548C04CE2BBD996500950141 = {
 			isa = PBXGroup;
 			children = (
+				548C04DA2BBD996500950141 /* DailyGrindApp.swift */,
+				548C050D2BBDDAED00950141 /* CustomSideBar */,
+				548C050A2BBDCF0200950141 /* CustomTabBar */,
 				548C04D92BBD996500950141 /* DailyGrind */,
 				548C04EB2BBD996600950141 /* DailyGrindTests */,
 				548C04F52BBD996600950141 /* DailyGrindUITests */,
@@ -95,8 +102,9 @@
 		548C04D92BBD996500950141 /* DailyGrind */ = {
 			isa = PBXGroup;
 			children = (
-				548C04DA2BBD996500950141 /* DailyGrindApp.swift */,
-				548C04DC2BBD996500950141 /* ContentView.swift */,
+				548C05072BBDC10400950141 /* SupportFiles */,
+				548C05062BBDC0F700950141 /* Models */,
+				548C05052BBDC0EF00950141 /* Views */,
 				548C04DE2BBD996600950141 /* Assets.xcassets */,
 				548C04E02BBD996600950141 /* DailyGrind.entitlements */,
 				548C04E12BBD996600950141 /* Preview Content */,
@@ -127,6 +135,60 @@
 				548C04F82BBD996600950141 /* DailyGrindUITestsLaunchTests.swift */,
 			);
 			path = DailyGrindUITests;
+			sourceTree = "<group>";
+		};
+		548C05052BBDC0EF00950141 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				548C04DC2BBD996500950141 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		548C05062BBDC0F700950141 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		548C05072BBDC10400950141 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		548C050A2BBDCF0200950141 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				548C050C2BBDCF1B00950141 /* Models */,
+				548C050B2BBDCF1100950141 /* Views */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		548C050B2BBDCF1100950141 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		548C050C2BBDCF1B00950141 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		548C050D2BBDDAED00950141 /* CustomSideBar */ = {
+			isa = PBXGroup;
+			children = (
+				548C050E2BBDDFBE00950141 /* SideMenu.swift */,
+				548C05102BBDE46000950141 /* SideMenuRow.swift */,
+			);
+			path = CustomSideBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548C050F2BBDDFBE00950141 /* SideMenu.swift in Sources */,
 				548C04DD2BBD996500950141 /* ContentView.swift in Sources */,
+				548C05112BBDE46000950141 /* SideMenuRow.swift in Sources */,
 				548C04DB2BBD996500950141 /* DailyGrindApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +494,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -468,6 +533,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
