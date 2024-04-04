@@ -21,6 +21,10 @@
 		548234432BBE49C30023AA21 /* InvestmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234422BBE49C30023AA21 /* InvestmentView.swift */; };
 		548234452BBE51590023AA21 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234442BBE51590023AA21 /* BaseView.swift */; };
 		548234482BBE580C0023AA21 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234472BBE580C0023AA21 /* ChartView.swift */; };
+		5482344D2BBF09350023AA21 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482344C2BBF09350023AA21 /* Tab.swift */; };
+		5482344F2BBF094B0023AA21 /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482344E2BBF094B0023AA21 /* TabPosition.swift */; };
+		548234512BBF095F0023AA21 /* TabBarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234502BBF095F0023AA21 /* TabBarHome.swift */; };
+		548234532BBF0A6D0023AA21 /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234522BBF0A6D0023AA21 /* TabShape.swift */; };
 		548C04DB2BBD996500950141 /* DailyGrindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C04DA2BBD996500950141 /* DailyGrindApp.swift */; };
 		548C04DD2BBD996500950141 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C04DC2BBD996500950141 /* ContentView.swift */; };
 		548C04DF2BBD996600950141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548C04DE2BBD996600950141 /* Assets.xcassets */; };
@@ -64,6 +68,10 @@
 		548234422BBE49C30023AA21 /* InvestmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentView.swift; sourceTree = "<group>"; };
 		548234442BBE51590023AA21 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		548234472BBE580C0023AA21 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		5482344C2BBF09350023AA21 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tab.swift; path = ../Tab.swift; sourceTree = "<group>"; };
+		5482344E2BBF094B0023AA21 /* TabPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabPosition.swift; path = ../TabPosition.swift; sourceTree = "<group>"; };
+		548234502BBF095F0023AA21 /* TabBarHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarHome.swift; path = ../TabBarHome.swift; sourceTree = "<group>"; };
+		548234522BBF0A6D0023AA21 /* TabShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabShape.swift; path = ../TabShape.swift; sourceTree = "<group>"; };
 		548C04D72BBD996500950141 /* DailyGrind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyGrind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548C04DA2BBD996500950141 /* DailyGrindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGrindApp.swift; sourceTree = "<group>"; };
 		548C04DC2BBD996500950141 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +154,18 @@
 			path = Charts;
 			sourceTree = "<group>";
 		};
+		5482344B2BBF091F0023AA21 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				548234502BBF095F0023AA21 /* TabBarHome.swift */,
+				548234522BBF0A6D0023AA21 /* TabShape.swift */,
+				5482344E2BBF094B0023AA21 /* TabPosition.swift */,
+				5482344C2BBF09350023AA21 /* Tab.swift */,
+			);
+			name = CustomTabBar;
+			path = ../../../.Trash/CustomTabBar;
+			sourceTree = "<group>";
+		};
 		548C04CE2BBD996500950141 = {
 			isa = PBXGroup;
 			children = (
@@ -170,8 +190,9 @@
 		548C04D92BBD996500950141 /* DailyGrind */ = {
 			isa = PBXGroup;
 			children = (
-				548C050D2BBDDAED00950141 /* CustomSideBar */,
+				5482344B2BBF091F0023AA21 /* CustomTabBar */,
 				548C05072BBDC10400950141 /* SupportFiles */,
+				548C050D2BBDDAED00950141 /* CustomSideBar */,
 				548C05062BBDC0F700950141 /* Models */,
 				548C05052BBDC0EF00950141 /* Views */,
 				548C04DE2BBD996600950141 /* Assets.xcassets */,
@@ -380,16 +401,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				548234222BBE07F60023AA21 /* EditProfileView.swift in Sources */,
+				548234532BBF0A6D0023AA21 /* TabShape.swift in Sources */,
 				548C050F2BBDDFBE00950141 /* SideMenu.swift in Sources */,
 				548234362BBE44FC0023AA21 /* Budget.swift in Sources */,
 				548234452BBE51590023AA21 /* BaseView.swift in Sources */,
+				5482344F2BBF094B0023AA21 /* TabPosition.swift in Sources */,
 				548234272BBE09890023AA21 /* HapticManager.swift in Sources */,
 				548234482BBE580C0023AA21 /* ChartView.swift in Sources */,
 				548234252BBE08780023AA21 /* AddTransaction.swift in Sources */,
 				5482342F2BBE26F50023AA21 /* TintColor.swift in Sources */,
+				548234512BBF095F0023AA21 /* TabBarHome.swift in Sources */,
 				5482342B2BBE26890023AA21 /* ViewExtension.swift in Sources */,
 				548234312BBE2CA50023AA21 /* TransactionsView.swift in Sources */,
 				548234432BBE49C30023AA21 /* InvestmentView.swift in Sources */,
+				5482344D2BBF09350023AA21 /* Tab.swift in Sources */,
 				548234342BBE44D40023AA21 /* BudgetsView.swift in Sources */,
 				548234292BBE1B7F0023AA21 /* DateExtension.swift in Sources */,
 				548C04DD2BBD996500950141 /* ContentView.swift in Sources */,
